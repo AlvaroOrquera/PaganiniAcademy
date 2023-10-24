@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+main {
+    background-color: var(--quartery-color);
+}
+
+:root {
+    --primary-color: #000000;
+    --secundary-color: #0000FF;
+    --tertiary-color: #DEB887;
+    --quartery-color: #FFF8DC;
+}
+
+/*header*/
+
+.navbar {
+    display: flex;
+    background-color: var(--tertiary-color);
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 5px;
+
+}
+
+#active {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+/*section 1*/
+
+.courses h2 {
+    text-align: center;
+}
+
+.articleimg {
+    display: flex;
+    gap: 3rem;
+    padding: 10px;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.courses article {
+    display: flex;
+    background-color: var(--tertiary-color);
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.cooking img {
+    display: flex;
+    width: 15vw;
+    height: 30vh;
+    margin: 20px 20px;
+
+}
+
+.paiting img {
+    display: flex;
+    width: 15vw;
+    height: 30vh;
+    margin: 20px 20px;
+}
+
+.sewing img {
+    display: flex;
+    width: 15vw;
+    height: 30vh;
+    margin: 20px 20px;
+}
+
+/*section 2*/
+.container {
+    padding: 30px;
+}
+
+.tableylist h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.table th {
+    background-color: var(--tertiary-color);
+    text-align: initial;
+    padding: 5px;
+    border-style: solid;
+    border-color: #b6b6b685;
+}
+
+.table td {
+    padding: 5px;
+    border-style: solid;
+    border-color: #b6b6b685;
+}
+
+.list li {
+    color: var(--secundary-color);
+}
+
+/*footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--tertiary-color);
+    height: 10vh;
+    align-items: center;
+}
+
+.form form {
+    display: flex;
+    font-size: 15px;
+}
+
+#Button {
+    flex-direction: row;
+    background-color: var(--quartery-color);
+    border-style: none;
+    padding: 5px;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+
+    .tableylist {
+        margin-top: 20%;
+    }
+
+    main {
+        min-height: 85vh;
+    }
+
+    .cooking img {
+        display: flex;
+        width: 15vw;
+        height: 20vh;
+        object-fit: contain;
+
+    }
+
+    .paiting img {
+        display: flex;
+        width: 15vw;
+        height: 20vh;
+        object-fit: cover;
+    }
+
+    .sewing img {
+        display: flex;
+        width: 15vw;
+        height: 20vh;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width:768px) {
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .courses {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articleimg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        min-height: 15vh;
+    }
+}
