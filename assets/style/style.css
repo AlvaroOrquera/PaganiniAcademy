@@ -193,6 +193,7 @@ footer {
     .courses {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .articleimg {
@@ -200,9 +201,32 @@ footer {
         flex-direction: column;
     }
 
-    .container{
+    .cooking img {
+        display: flex;
+        width: 30vw;
+        height: 20vh;
+        object-fit: contain;
+
+    }
+
+    .paiting img {
+        display: flex;
+        width: 30vw;
+        height: 20vh;
+        object-fit: cover;
+    }
+
+    .sewing img {
+        display: flex;
+        width: 30vw;
+        height: 20vh;
+        object-fit: cover;
+    }
+
+    .container {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     footer {
